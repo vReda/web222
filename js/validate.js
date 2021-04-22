@@ -3,18 +3,26 @@ function validate(event) {
   var long = document.getElementById("long").value;
   valid = true;
 
-  if (lat > 90 || lat < -90)
+  if (lat > 90 || lat < -90 || isNaN(lat))
   {
-    var error = document.getElementById("latError");
-    error.append(" must be a valid Latitude (-90 to 90)");
+
+    document.getElementById("latError").style.visibility="visible";
     valid = false;
   }
-
-  if (long > 180 || long < -180)
+  else
   {
-    var error = document.getElementById("longError");
-    error.append(" must be a valid Longitude (-180 to 180)");
+    document.getElementById("latError").style.visibility="hidden"; 
+  }
+
+  if (long > 180 || long < -180 || isNaN(long))
+  {
+
+    document.getElementById("longError").style.visibility="visible";
     valid = false;
+  }
+  else
+  {
+    document.getElementById("longError").style.visibility="hidden";
   }
 
   return valid; 
