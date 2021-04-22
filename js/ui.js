@@ -101,32 +101,19 @@ function buildCardForObservation(observation) {
 function toggleLoading(isLoading) {
   var form = document.getElementById("search");
   var button = form.submitBtn;
-  var icon = button.subIcon;
-  //console.log(icon);
 
   if (isLoading)
   {
-    //document.getElementById(subIcon).className="fas fa-hourglass-half";
-    //icon.classList.add("fas fa-hourglass-half");
+    button.className="fas fa-hourglass-half";
     button.innerText=" Loading... ";
     button.disabled=true;
   }
 
   if (!isLoading)
   {
-    //document.getElementById(subIcon).className="fas fa-search";
-    button.innerText="Search";
+    button.className="fas fa-search";
+    button.innerText=" Search";
     button.disabled=false;
   }
-  //When true:
-  //-Icon is hourglass
-  //-Text says Loading
-  //-button disabled
 
-  //When false:
-  //-icon is magnifying glass
-  //-text says Search
-  //-button enabled
-
-  console.log('TODO - toggle the state of the Search button to/from Loading');
 }
