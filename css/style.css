@@ -118,11 +118,9 @@ footer {
   text-align: right;
 }
 
-.submitBtn {
-  padding: 12px 16px;
-  width: 150px;
-  font-family: Arial, Helvetica, sans-serif;
-
+#submitBtn {
+  padding: 12px 20px;
+  width: 18%;
 }
 
 .form-inline {
