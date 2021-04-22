@@ -100,11 +100,10 @@
       <section>
         <h2>Map</h2>
         <!-- Search Form -->
-        <form id="search">
-          <input type="text" name="address" size=75 placeholder="1750 Finch Ave E, North York, ON, CA">
-          <button type="submit" id="submitBtn" name="submitBtn" value="submit"><i id="subIcon" name="subIcon" class="fas fa-search"></i>&nbsp;Search</button> 
-          
-          <!-- TODO - fix this button placing nonsense -->
+        <form id="search" class="form-inline">
+          <input type="text" name="address" size="86" placeholder="1750 Finch Ave E, North York, ON, CA">
+          <button id="submitBtn" name="submitBtn" value="submit" class="fas fa-search" type="submit">&nbsp;Search</button> 
+
         </form>
         <!-- Leaflet Map will get drawn within this div element -->
         <div id="map" class="loading">
