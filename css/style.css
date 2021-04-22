@@ -121,9 +121,15 @@ footer {
 .submitBtn {
   padding: 12px 16px;
   width: 150px;
-  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-/**
- * TODO: style the Search Form
- */
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+
+

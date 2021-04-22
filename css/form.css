@@ -5,3 +5,11 @@
 legend {
     font-weight:bold;
 }
+
+#latError {
+    visibility: hidden;
+  }
+  
+  #longError {
+    visibility: hidden;
+  }
