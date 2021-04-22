@@ -56,7 +56,8 @@
         <h2>Observation Details</h2>
         <p><span class="required">*</span> Required field</p>
         <form
-          >
+        action="https://formspree.io/f/mbjqlzyd"
+                method="POST">
           <fieldset>
             <legend>Observation</legend>
             <p>
@@ -77,7 +78,7 @@
               <input type="text" id="lat" name="lat" placeholder="43.7955" required>
               <label for="long">Longitude<span class="required">*<span id="longError"> must be a valid Longitude (-180 to 180)</span></span></label>
               <input type="text" id="long" name="long" placeholder="-79.3496" required>
-              <input type="checkbox" name="share" value="1"/><label for="share">Share location information (i.e., it's ok to make this public)</label>
+              <input type="checkbox" name="share" value="checked"/><label for="share">Share location information (i.e., it's ok to make this public)</label>
             </p>
           </fieldset>
           <fieldset>
@@ -91,12 +92,12 @@
               <input type="file" id="photoFile" name="photoFile">
               <label for="licesnes">License (<a href="https://creativecommons.org/choose/">help on choosing a license</a>)</label>
               <select id="licenses" name="licenses">
-                <option value="1">Creative Commons Attribution License</option>
-                <option value="2">Creative Commons Attribution-NonCommercial License</option>
-                <option value="3">Creative Commons Attribution-ShareAlike License</option>
-                <option value="4">Creative Commons Attribution-NoDerivs License</option>
-                <option value="5">Creative Commons Attribution-NonCommercial-ShareAlike License</option>
-                <option value="6">Creative Commons Attribution-NonCommercial-NoDerivs License</option>
+                <option value="Creative Commons Attribution License">Creative Commons Attribution License</option>
+                <option value="Creative Commons Attribution-NonCommercial License">Creative Commons Attribution-NonCommercial License</option>
+                <option value="Creative Commons Attribution-ShareAlike License">Creative Commons Attribution-ShareAlike License</option>
+                <option value="Creative Commons Attribution-NoDerivs License">Creative Commons Attribution-NoDerivs License</option>
+                <option value="Creative Commons Attribution-NonCommercial-ShareAlike License">Creative Commons Attribution-NonCommercial-ShareAlike License</option>
+                <option value="Creative Commons Attribution-NonCommercial-NoDerivs License">Creative Commons Attribution-NonCommercial-NoDerivs License</option>
               </select>
             </p>
           </fieldset>
@@ -104,9 +105,7 @@
         </form>
       </section>
     </main>
-    <!-- Your custom form validation code goes in the file js/validate.js 
-    action="https://formspree.io/f/mbjqlzyd"
-          method="POST"-->
+    
     <script src="js/validate.js"></script>
   </body>
 </html>
